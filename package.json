@@ -1,0 +1,29 @@
+{
+  "name": "config-properties-manager",
+  "version": "0.0.4",
+  "description": "Config Properties manager",
+  "main": "index.js",
+  "scripts": {
+    "test": "ENVIRONMENT=test mocha --timeout 30000 ./test/**/*.js --exit",
+    "coverage": "nyc -r cobertura -r text-summary -r html npm test"
+  },
+  "keywords": [
+    "env",
+    "config",
+    "property"
+  ],
+  "author": "vikash",
+  "license": "ISC",
+  "dependencies": {
+    "request": "^2.88.0",
+    "request-promise-native": "^1.0.7",
+    "ajv": "^6.10.2"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "dotenv": "^8.0.0",
+    "mocha": "^6.2.0",
+    "nock": "^10.0.6",
+    "nyc": "^14.1.1"
+  }
+}
